@@ -48,4 +48,27 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    swapButton: {
+        backgroundColor: colors.primary,
+        paddingVertical: 16,
+        paddingHorizontal: 24,
+        borderRadius: 12,
+        marginBottom: 24,
+    },
+    swapButtonText: {
+        color: colors.text,
+        fontSize: 18,
+        textAlign: 'center',
+        fontWeight: '600',
+    },
+    convertButton: {
+        backgroundColor: colors.primary,
+        paddingVertical: 16,
+        paddingHorizontal: 24,
+        borderRadius: 12,
+        marginBottom: 24,
+    },
+    convertButtonDisabled: {
+        backgroundColor: colors.disabled,
+    },
 });
