@@ -21,7 +21,7 @@ export function ResultCard({
         {toSymbol} {result}
       </Text>
       <Text style={styles.rate}>
-        Taxa de câmbio 1: {fromCurrency} = {exchangeRate.toFixed(4)} {toCurrency}
+        Taxa de câmbio 1 {fromCurrency} = {exchangeRate.toFixed(4)} {toCurrency}
       </Text>
     </View>
   );
