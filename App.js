@@ -8,6 +8,7 @@ import { ResultCard } from './src/components/ResultCard';
 import { exchangeRateApi } from './src/services/api';
 import { convertCurrency } from './src/utils/convertCurrency';
 import { useState } from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
 
@@ -50,6 +51,7 @@ export default function App() {
 
   {/* Keyboard to avoid overlay */}
   return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#0f172a' }}>
     <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -119,6 +121,7 @@ export default function App() {
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
 
