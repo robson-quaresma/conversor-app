@@ -3,8 +3,19 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
+    <View>
+      <StatusBar style="light" />
+
+      <View>
+        <Text>Conversor de Moeda</Text>
+        <Text>Converta valores entre diferentes moedas</Text>
+      </View>
+
+      <View>
+        <Text>De</Text>
+        
+      </View>
+
     </View>
   );
 }
