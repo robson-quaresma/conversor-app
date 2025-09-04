@@ -2,7 +2,7 @@ import { Text, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
 
 
-export function Button({variant='primary', title='Testando', onPress}) {
+export function Button({variant='primary', onPress, currency}) {
     return (
         <TouchableOpacity 
             onPress={onPress}
@@ -12,7 +12,7 @@ export function Button({variant='primary', title='Testando', onPress}) {
             ]}
         >
             <Text style={styles.buttonText}>
-                {title}
+                {currency.code}
             </Text>
         </TouchableOpacity>
     )
